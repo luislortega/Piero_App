@@ -1,0 +1,21 @@
+AL DESCOMPRIMIR LA CARPETA DESPUES DE TENER NODEJS INSTALADO EJECUTA EL SIGUENTE COMANDO EN CONSOLA.
+
+"cd (aqui pones la direccion de la carpeta conetedora ej; C:\Users\oscka\Desktop\electron_dll_demo-master)"
+ASI : cd C:\Users\oscka\Desktop\electron_dll_demo-master
+
+luego ejecutas "npm install"
+luego para probarlo "npm start"
+y ya si quieres editar el link del hotel vas a tener que editar en \app\lib\js\vendormodernizr-2.6.2.min.js
+el icono se encuentra en icon.png
+
+y para crear el installer se ejecuta el comando: 
+
+"npm run build-installer"
+y se va crear en la carpeta \release
+
+EL NOMBRE DE LA APP SE CAMBIA EN EL PACKAGE.JSON
+pagina para encriptar el main.js
+https://obfuscator.io/
+
+ahi te deje el main desncriptado (NOTA: AL EJECUTAR EL COMANDO DE CREAR EL INSTALADOR ASEGURATE DE NO DEJAR 
+EL ARCHIVO MAIN QUE ESTA DESENCRIPTADO POR QUE SE PODRIA COMPRIMIR EN EL INSTALADOR)

@@ -1,0 +1,32 @@
+{
+  "name": "Piero-Client-1",
+  "version": "1.0.0",
+  "description": "Flash player",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "build --dir",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "cristest",
+    "productName": "Piero Client",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png",
+      "extraResources": "./app/lib/*.dll"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }
+  },
+  "keywords": [
+    "Habbo"
+  ],
+  "author": "OscarG",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-builder": "^19.16.0"
+  }
+}
